@@ -37,7 +37,7 @@
                         <td class="p-3 border text-center">
                             <div class="btn-group">
 
-                                <button><a href="{{route('edit',$data->student_id)}}">Edit</a></button>
+                                <button><a href="{{route('edit',$data->id)}}">Edit</a></button>
 
 
                                 <form action="{{route('delete',$data->id)}}" method="post">

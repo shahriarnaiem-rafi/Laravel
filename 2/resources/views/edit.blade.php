@@ -33,7 +33,7 @@
                 @csrf
                 <div class="mb-4">
                     <label class="block text-gray-700 font-bold mb-2">Id</label>
-                    <input type="text" name="student_id" class="input input-bordered w-full px-3 py-2 border rounded-lg focus:ring focus:ring-blue-200" value="{{$data->id}}" required>
+                    <input type="text" name="id" class="input input-bordered w-full px-3 py-2 border rounded-lg focus:ring focus:ring-blue-200" readonly value="{{$data->id}}" required>
                     @error('id') <p class="text-red-500 text-sm">{{ $message }}</p> @enderror
                 </div>
 

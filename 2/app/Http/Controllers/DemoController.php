@@ -30,12 +30,12 @@ class DemoController extends Controller
         return Redirect:: to('/demo');
 
     }
-    public function update($student_id){
-        $data=Post::find($student_id);
+    public function update($id){
+        $data=Post::find($id);
         return view ('edit',compact('data'));
     }
     public function editStore(Request $request){
-        $data=Post::find($request->student_id);
+        $data=Post::find($request->id);
         $data->name=$request->name;
         $data->email=$request->email;
         $data->save();
