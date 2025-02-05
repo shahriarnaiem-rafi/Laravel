@@ -22,3 +22,6 @@ Route::get('/add-user', function () {
 Route::get('/manage-user', function () {
     return view('pages.aurth.manage_user');
 });
+Route::get('/dashboard', function () {
+    return view('pages.dashboard');
+});
